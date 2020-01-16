@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_sub_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sub goal"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/edittext_profile"/>
+    <TextView
+        android:id="@+id/tv_subddl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="sub - deadline"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/edittext_profile"
+        android:layout_below="@id/tv_sub_goal"/>
+
+    <TextView
+        android:id="@+id/tv_how_long"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="how long will it take?"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/edittext_profile"
+        android:layout_below="@id/tv_subddl"/>
+    <TextView
+        android:id="@+id/tv_difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="please select difficulty level"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/edittext_profile"
+        android:layout_below="@id/tv_how_long"/>
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="start date"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/edittext_profile"
+        android:layout_below="@id/tv_difficulty"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:background="@drawable/button_addsubgoal"
+        android:textColor="#ffffff"
+        android:layout_below="@id/tv_start_date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="60dp"
+        />
+</RelativeLayout>
