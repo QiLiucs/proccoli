@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NewProccoli</string>
+    <string name="nav_1">profile</string>
+    <string name="nav_2">survey</string>
+</resources>

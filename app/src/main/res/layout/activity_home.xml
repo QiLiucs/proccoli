@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tl_profile"
+        android:padding="10dp">
+        <TableRow>
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image"
+                app:srcCompat="@drawable/light0"
+                android:layout_weight="2"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/image"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:gravity="left"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="15dp"
+                            android:text="Individual Goal :"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"/>
+
+                        <TextView
+                            android:padding="3dp"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="15dp"
+                            android:text="0"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:gravity="left"
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="15dp"
+                            android:text="Completed Goal :"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_width="0dp"
+                            android:layout_weight="3"/>
+
+                        <TextView
+                            android:paddingHorizontal="5dp"
+                            android:paddingVertical="15dp"
+                            android:text="0"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/signup"
+                    android:padding="5dp"
+                    android:text="Main Progress"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+            <Button
+                android:background="@drawable/signup"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                />
+            <Button
+                android:background="@drawable/signup"
+                android:layout_marginLeft="10dp"
+                android:text="Create Goal"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/rg_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/tl_profile"
+        android:layout_marginTop="10dp"
+        >
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/image"
+            >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Active"
+                android:button="@null"
+                android:background="@drawable/radio"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expired"
+                android:button="@null"
+                android:background="@drawable/radio"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="5dp"/>
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/radio"
+                android:text="Finished"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="3dp"
+                android:paddingVertical="3dp"
+                android:paddingHorizontal="3dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rg_status"
+        android:layout_above="@id/navigation"
+        android:id="@+id/lv_goals"
+
+        />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/buttom_item_icon_tint"
+        app:itemTextColor="@drawable/buttom_item_icon_tint">
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>
+
+
