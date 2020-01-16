@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:background="@drawable/image"
+        android:background="@drawable/bg_image"
         android:id="@+id/iv_left"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         android:scaleType="fitCenter"
         android:layout_margin="3dp"/>
     <ImageView
-        android:background="@drawable/image"
+        android:background="@drawable/bg_image"
         android:id="@+id/iv_center"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
         android:layout_margin="3dp"
         />
     <ImageView
-        android:background="@drawable/image"
+        android:background="@drawable/bg_image"
         android:id="@+id/iv_right"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
